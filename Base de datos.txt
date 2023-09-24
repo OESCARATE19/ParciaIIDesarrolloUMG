@@ -1,0 +1,22 @@
+create database parcial;
+use parcial;
+
+CREATE TABLE `clientes` (
+  `idcliente` int(11) NOT NULL AUTO_INCREMENT,
+  `primernombre` varchar(255) DEFAULT NULL,
+  `segundonombre` varchar(255) DEFAULT NULL,
+  `otronombre` varchar(255) DEFAULT NULL,
+  `primerapellido` varchar(255) DEFAULT NULL,
+  `segundoapellido` varchar(255) DEFAULT NULL,
+  `otroapellido` varchar(255) DEFAULT NULL,
+  `genero` varchar(10) DEFAULT NULL,
+  `fechadenacimiento` datetime DEFAULT NULL,
+  `segmento` varchar(50) DEFAULT NULL,
+  `sueldo` decimal(10,2) DEFAULT NULL,
+  `dpi` varchar(20) DEFAULT NULL,
+  `correo` varchar(255) DEFAULT NULL,
+  `telefono` varchar(20) DEFAULT NULL,
+  `direccion` varchar(255) DEFAULT NULL,
+  `fechacreacion` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`idcliente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
